@@ -1,4 +1,4 @@
-public class Git {
+public class TaskString {
 
     public static void main(String[] args) {
         String value = "Akkvf fsss92DFf ffEgas";
