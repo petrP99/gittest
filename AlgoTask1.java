@@ -52,10 +52,7 @@ public class AlgoTask1 {
             day = 1;
             month ++;
         } else day++;
-
-        String result = day + "." + month + "." + year;
-        return result;
-
+        return day + "." + month + "." + year;
     }
 }
 
