@@ -10,7 +10,7 @@
 
 public class Task3 {
     public static void main(String[] args) {
-        double s1 = square1(2,5);
+        double s1 = square1(-2,5);
         double s2 = square2(51,2);
         System.out.println("Площадь первого треугольника: " + s1);
         System.out.println("Площадь второго треугольника: " + s2);
@@ -27,5 +27,4 @@ public class Task3 {
         else if (s1 > s2) System.out.println("Первый треугольник больше второго");
         else if (s1 < s2) System.out.println("Первый треугольник меньше второго");
     }
-
 }

@@ -3,9 +3,9 @@
 в какую четверть часа попадает это число (в первую, вторую, третью или четвертую).
 
 Протестировать функцию в main.*/
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
-    int minutes = -1;
+    int minutes = 16;
     printOfPart(minutes);
     }
     private static void printOfPart (int value) {
