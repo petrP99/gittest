@@ -9,7 +9,7 @@ public class Task1 {
     printOfPart(minutes);
     }
     private static void printOfPart (int value) {
-        if (value <= 15 && value >0) System.out.println("1-я четверть часа");
+        if (value <= 15 && value >=0) System.out.println("1-я четверть часа");
         else if (value >= 16 && value <=30 ) System.out.println("2-я четверть часа");
         else if (value >= 31 && value <=45 ) System.out.println("3-я четверть часа");
         else if (value >= 46 && value <=59 ) System.out.println("4-я четверть часа");
