@@ -13,6 +13,7 @@ import java.util.Arrays;
 public class Task2 {
     public static void main(String[] args) {
         char[] array = {'a','g' , '5' ,'+' , 'v' ,'W' ,'4' ,'=' ,'|'};
+        System.out.println("Массив символов: "+ Arrays.toString(array));
         transformation(array);
     }
     private static void transformation (char[] arr) {
@@ -24,6 +25,7 @@ public class Task2 {
         }
         System.out.println("Массив целых чисел: " + Arrays.toString(intArray));
         int average = sum / intArray.length;
+        System.out.println("Среде-арифметическое: " + average);
         System.out.print("Значения, выше среде-арифметического: ");
         for (int i = 0; i < intArray.length; i++) {
             if (intArray[i] >= average) System.out.print(intArray[i] +" ");
