@@ -13,12 +13,11 @@ package ArraysTask;
 
 import java.util.Arrays;
 
-public class Example {
+public class Task3 {
     public static void main(String[] args) {
         int[] array = {17, -8, 11, 0, -6, 99, 5, 0, -68, 3, -7, -440};
         separationArray(array);
     }
-
     private static void separationArray(int[] array) {
         int lengthPositive = 0;
         int lengthNull = 0;
@@ -31,7 +30,6 @@ public class Example {
         int[] positiveArray = new int[lengthPositive];
         int[] nigativeArray = new int[lengthNigative];
         int[] nullArray = new int[lengthNull];
-
         int count0 = 0;
         int count1 = 0;
         int count2 = 0;
@@ -53,6 +51,5 @@ public class Example {
         System.out.println(Arrays.toString(positiveArray));
         System.out.println(Arrays.toString(nullArray));
         System.out.println(Arrays.toString(nigativeArray));
-
     }
 }
