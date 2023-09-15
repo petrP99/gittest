@@ -11,18 +11,26 @@
 
 
 public class Task2 {
-    public static void main(String[] args) {
-        double a = 3;
-        double b = 7;
-        char c = '%';
-        System.out.println(result(a, b, c));
+          
+ private final static char ADDITION = '+';
+ private final static char SUBTRACTION = '-';
+ private final static char MULTIPLICATION = '*';
+ private final static char DIVISION = '/';
+ private final static char MODULUS = '%';
+     public static void main(String[] args) {
+        double operand1 = 3;
+        double operand2 = 7;
+        char operation;
+        System.out.println(result(operand1, operand2, operation));
     }
     private static double result(double a, double b, char c) {
-        if(c == '+') return a + b;
-        else if (c == '-') return a - b;
-        else if (c == '*') return a * b;
-        else if (c == '/') return a / b;
-        else if (c == '%') return a % b;
-        else return 0;
+        return switch (operation) {
+          case ADDITION -> operand1 + operand2;
+          case SUBTRACTION -> operand1 - operand2;
+          case MULTIPLICATION -> operand1 * operand2;
+          case DIVISION -> operand1 / operand2;
+          case MODULUS -> operand1 % operand2;
+          default -> throw new IllegalArgumentException("Неверная математическая операция");
+      };
         }
     }
