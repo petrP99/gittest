@@ -16,6 +16,7 @@ public class Task2 {
         System.out.println("Массив символов: "+ Arrays.toString(array));
         transformation(array);
     }
+    
     private static void transformation (char[] arr) {
         int[] intArray = new int[arr.length];
         int sum = 0;
@@ -28,8 +29,9 @@ public class Task2 {
         System.out.println("Среде-арифметическое: " + average);
         System.out.print("Значения, выше среде-арифметического: ");
         for (int i = 0; i < intArray.length; i++) {
-            if (intArray[i] >= average) System.out.print(intArray[i] +" ");
+            if (intArray[i] >= average) System.out.print(intArray[i] + " ");
             }
         }
     }
+
 
