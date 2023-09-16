@@ -16,9 +16,10 @@ import java.util.Arrays;
 public class Task3 {
     public static void main(String[] args) {
         int[] array = {17, -8, 11, 0, -6, 99, 5, 0, -68, 3, -7, -440};
-        separationArray(array);
+        splitArray(array);
     }
-    private static void separationArray(int[] array) {
+
+    private static void splitArray(int[] array) {
         int lengthPositive = 0;
         int lengthNull = 0;
         int lengthNigative = 0;
@@ -30,23 +31,14 @@ public class Task3 {
         int[] positiveArray = new int[lengthPositive];
         int[] nigativeArray = new int[lengthNigative];
         int[] nullArray = new int[lengthNull];
-        int count0 = 0;
-        int count1 = 0;
-        int count2 = 0;
+        int countPositive = 0;
+        int countNull = 0;
+        int countNigative = 0;
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > 0) {
-                positiveArray[count0] = array[i];
-                count0++;
-            }
-            if (array[i] == 0) {
-                nullArray[count1] = array[i];
-                count1++;
-            }
-            if (array[i] < 0) {
-                nigativeArray[count2] = array[i];
-                count2++;
-            }
+            if (array[i] > 0) positiveArray[countPositive++] = array[i];
+            else if (array[i] == 0) nullArray[countNull++] = array[i];
+            else nigativeArray[countNigative++] = array[i];
         }
         System.out.println(Arrays.toString(positiveArray));
         System.out.println(Arrays.toString(nullArray));
