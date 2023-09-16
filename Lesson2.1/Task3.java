@@ -12,27 +12,23 @@ public class Task3 {
     public static void main(String[] args) {
 
         int currentZP = 600; //текущая зп
-        int timeOfWork = 5; // количество отработанных месяцев
+        int timeOfWork = 15; // количество отработанных месяцев
         int tratyFoodInMonth = 300; // траты на еду каждый месяц
         printInfo(currentZP,timeOfWork, tratyFoodInMonth);
     }
     private static void printInfo (int currentZP, int timeOfWork, int tratyFoodInMonth ) {
-        int finalZP = 0;
-//        double investProfit = 0;
-        double invest = 0;
+        int finalZP = 0; // всего получено зарплаты
+        double invest = 0; // инвест депозит
         for (int i = 1; i <= timeOfWork; i++) {
-            if (i % 6 == 0) {
-                currentZP = currentZP + 400; }
+            if (i % 6 == 0) currentZP = currentZP + 400;   // текущая зп, увеличивается на 400 каждые 6 мес
             finalZP = finalZP + currentZP;
-            invest = (invest + (currentZP / 10))*1.02;
-//            if (i % 12 == 0) {
-//                invest = invest * 1.02;
-////                investProfit = (double) ((finalZP - investProfit) / 10 ) * 0.02;
-
+            invest = (invest + (currentZP / 10))*1.02;  // инвет счет, 10% от зп + 2% в месяц
         }
-        int toInvestDeposit = (int) (finalZP * 0.10);
-        int tratyAllTime = (timeOfWork * tratyFoodInMonth) + toInvestDeposit;
-        int finalDepo = finalZP - tratyAllTime;
+        
+        int toInvestDeposit = (int) (finalZP * 0.10); // сколько было отчислено на депозит за все время
+        int tratyAllTime = (timeOfWork * tratyFoodInMonth) + toInvestDeposit; //все траты
+        int finalDepo = finalZP - tratyAllTime; // итоговый счет за вычетом трат
+        
         System.out.println("Vsego polucheno: " + finalZP);
         System.out.println("Vsego rashodov: " + tratyAllTime);
         System.out.println("Итоговый счет программиста: " + finalDepo);
