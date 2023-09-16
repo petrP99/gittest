@@ -10,10 +10,11 @@ import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
-    int[] array = {10, -2, 6, -11, 0, 9, 99, -40, 17};
+        int[] array = {10, -2, 6, -11, 0, 9, 99, -40, 17};
         editArray(array);
     }
-    private static void editArray (int[] arr) {
+
+    private static void editArray(int[] arr) {
         int temp;
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -24,9 +25,11 @@ public class Task1 {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] >= 0) {
                 temp = arr[i];
-            newArray[index] = temp * count;
-            index++; }
+                newArray[index] = temp * count;
+                index++;
             }
+        }
         System.out.println(Arrays.toString(newArray));
     }
 }
+
