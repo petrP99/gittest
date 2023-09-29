@@ -22,7 +22,6 @@ public class Atm {
     private int countBanknote50 = 0;
 
 
-
     void addCash(int addCash) {
 
         balance += addCash;
@@ -49,6 +48,7 @@ public class Atm {
         }
         tempCash = tempCash - currentCountBanknote10 * NOMINAL10;
 
+        System.out.println("Пополнение прошло успешно!");
 
     }
 

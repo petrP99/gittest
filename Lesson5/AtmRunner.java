@@ -11,12 +11,10 @@ package Lesson5;
  будет пытаться рассчитаться 50, далее добавит недостающие 20, и только затем 10 (не нужно рассматривать более сложные
   варианты выдачи наличных, чтобы не усложнять алгоритм).
 * */
-public class Task {
+public class AtmRunner {
     public static void main(String[] args) {
         Atm atm = new Atm();
         atm.addCash(160);
-        atm.printInfo();
-        atm.withdrawCash(140);
         atm.printInfo();
 
     }
