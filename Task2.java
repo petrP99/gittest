@@ -11,11 +11,17 @@
 
 
 public class Task2 {
-    public static void main(String[] args) {
-        double a = 3;
+    double a = 3;
         double b = 7;
-        char c = '%';
-        System.out.println(result(a, b, c));
+        private final char c = '%';
+        private final char c1 = '%';
+        private final char c2 = '%';
+        private final char c3 = '%';
+        private final char c4 = '%';
+        private final char c5 = '%';
+        private final char c6 = '%';
+    public static void main(String[] args) {
+//        System.out.println(result(a, b, c1));
     }
     private static double result(double a, double b, char c) {
         if(c == '+') return a + b;
